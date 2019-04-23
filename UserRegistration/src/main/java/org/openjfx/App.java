@@ -16,7 +16,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("fxml/sample.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("fxml/signIn.fxml"));
         Parent root = loader.load();
         setStage(primaryStage, "UserRegistration", root);
     }

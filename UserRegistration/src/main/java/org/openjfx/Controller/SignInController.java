@@ -32,8 +32,8 @@ import java.util.logging.Logger;
 //TODO: валидация данных 1.5 часа
 //TODO: почистить код 2 часа
 
-public class Controller implements Initializable {
-    private static final Logger LOGGER = Logger.getLogger(Controller.class.getName());
+public class SignInController implements Initializable {
+    private static final Logger LOGGER = Logger.getLogger(SignInController.class.getName());
     private UserDAO userDAO;
 
     @FXML
@@ -74,16 +74,10 @@ public class Controller implements Initializable {
     @FXML
     public void handleButtonClick(ActionEvent actionEvent) throws IOException {
         Button button = (Button) actionEvent.getSource();
-        button.arm();
-        PauseTransition pause = new PauseTransition(Duration.seconds(0.5));
-        pause.setOnFinished(event -> {
-            button.disarm();
-            button.fire();
-        });
-        pause.play();
-        pause.pause();
-        String result = button.getText();
-        password.setText(password.getText() + result);
+        if(password.getText().length() < 4) {
+            String result = button.getText();
+            password.setText(password.getText() + result);
+        }
     }
 
     @FXML
