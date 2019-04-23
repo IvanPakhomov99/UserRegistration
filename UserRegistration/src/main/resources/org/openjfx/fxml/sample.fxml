@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<?import java.net.URL?>
+<Pane fx:id="pane" prefHeight="855.0" prefWidth="491.0" style="-fx-background-color: #2f4f4f;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.Controller.Controller">
+   <stylesheets>
+      <URL value="@../static/css/button.css" />
+   </stylesheets>
+   <children>
+      <Label fx:id="hour" alignment="TOP_RIGHT" disable="true" layoutX="84.0" layoutY="82.0" prefHeight="70.0" prefWidth="89.0" text="06 :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Label>
+      <Label fx:id="minute" alignment="TOP_LEFT" disable="true" layoutX="173.0" layoutY="82.0" prefHeight="70.0" prefWidth="101.0" text=" 17 :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Label>
+      <Label fx:id="second" alignment="TOP_CENTER" disable="true" layoutX="269.0" layoutY="82.0" prefHeight="70.0" prefWidth="68.0" text=" 09" textFill="#b2a4a4">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+      <Label fx:id="period" alignment="CENTER" disable="true" layoutX="335.0" layoutY="82.0" prefHeight="77.0" prefWidth="79.0" text=" AM" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" alignment="CENTER" disable="true" layoutX="67.0" layoutY="243.0" prefHeight="70.0" prefWidth="361.0" style="-fx-border-color: #faf0e6; -fx-background-color: #000000;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </PasswordField>
+      <Button fx:id="clear" layoutX="66.0" layoutY="322.0" mnemonicParsing="false" onMouseClicked="#clearPassword" prefHeight="54.0" prefWidth="182.0" style="-fx-background-color: #808080; -fx-border-color: #000000;" text="CLEAR" textFill="WHITE">
+         <effect>
+            <ColorAdjust brightness="-0.4" contrast="1.0" hue="0.67" saturation="-1.0" />
+         </effect>
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="backspace" layoutX="247.0" layoutY="322.0" mnemonicParsing="false" onAction="#backspacePassword" prefHeight="54.0" prefWidth="182.0" style="-fx-background-color: #808080; -fx-border-color: #000000;" text="BACKSPACE" textFill="WHITE">
+         <effect>
+            <ColorAdjust brightness="-0.4" contrast="1.0" hue="0.67" saturation="-1.0" />
+         </effect>
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="button1" layoutX="66.0" layoutY="376.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="54.0" prefWidth="121.0" style="-fx-background-color: #778899; -fx-border-color: #000000;" text="1" textFill="WHITE">
+      <effect>
+         <ColorAdjust brightness="-0.4" contrast="1.0" hue="0.67" saturation="-1.0" />
+      </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button2" layoutX="187.0" layoutY="376.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="54.0" prefWidth="121.0" style="-fx-background-color: #778899; -fx-border-color: #000000;" text="2" textFill="WHITE">
+         <effect>
+            <ColorAdjust brightness="-0.4" contrast="1.0" hue="0.67" saturation="-1.0" />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button3" layoutX="308.0" layoutY="376.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="54.0" prefWidth="121.0" style="-fx-background-color: #778899; -fx-border-color: #000000;" text="3" textFill="WHITE">
+         <effect>
+            <ColorAdjust brightness="-0.4" contrast="1.0" hue="0.67" saturation="-1.0" />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button4" layoutX="66.0" layoutY="430.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="54.0" prefWidth="121.0" style="-fx-background-color: #778899; -fx-border-color: #000000;" text="4" textFill="WHITE">
+         <effect>
+            <ColorAdjust brightness="-0.4" contrast="1.0" hue="0.67" saturation="-1.0" />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button5" layoutX="187.0" layoutY="430.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="54.0" prefWidth="121.0" style="-fx-background-color: #778899; -fx-border-color: #000000;" text="5" textFill="WHITE">
+         <effect>
+            <ColorAdjust brightness="-0.4" contrast="1.0" hue="0.67" saturation="-1.0" />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button6" layoutX="308.0" layoutY="430.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="54.0" prefWidth="121.0" style="-fx-background-color: #778899; -fx-border-color: #000000;" text="6" textFill="WHITE">
+         <effect>
+            <ColorAdjust brightness="-0.4" contrast="1.0" hue="0.67" saturation="-1.0" />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button7" layoutX="66.0" layoutY="484.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="54.0" prefWidth="121.0" style="-fx-background-color: #778899; -fx-border-color: #000000;" text="7" textFill="WHITE">
+         <effect>
+            <ColorAdjust brightness="-0.4" contrast="1.0" hue="0.67" saturation="-1.0" />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button8" layoutX="187.0" layoutY="484.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="54.0" prefWidth="121.0" style="-fx-background-color: #778899; -fx-border-color: #000000;" text="8" textFill="WHITE">
+         <effect>
+            <ColorAdjust brightness="-0.4" contrast="1.0" hue="0.67" saturation="-1.0" />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button9" layoutX="308.0" layoutY="484.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="54.0" prefWidth="121.0" style="-fx-background-color: #778899; -fx-border-color: #000000;" text="9" textFill="WHITE">
+         <effect>
+            <ColorAdjust brightness="-0.4" contrast="1.0" hue="0.67" saturation="-1.0" />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="button0" layoutX="187.0" layoutY="538.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="54.0" prefWidth="121.0" style="-fx-background-color: #778899; -fx-border-color: #000000;" text="0" textFill="WHITE">
+         <effect>
+            <ColorAdjust brightness="-0.4" contrast="1.0" hue="0.67" saturation="-1.0" />
+         </effect>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="logIn" alignment="CENTER" contentDisplay="CENTER" layoutX="66.0" layoutY="641.0" mnemonicParsing="false" onAction="#handleLogInClick" prefHeight="83.0" prefWidth="363.0" style="-fx-background-color: #4169e1;" text="LOG IN" textAlignment="CENTER" textFill="#fffefe">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+      </Button>
+      <Button fx:id="clockInOut" alignment="CENTER" contentDisplay="CENTER" layoutX="66.0" layoutY="741.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="363.0" style="-fx-background-color: #3cb371;" text="CLOCK IN/OUT" textAlignment="CENTER" textFill="#fffefe">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+      </Button>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</Pane>
